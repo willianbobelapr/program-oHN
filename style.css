@@ -1,0 +1,35 @@
+/* Estilização geral do corpo da página */
+body {
+    /* Define a cor de fundo como um tom de azul escuro */
+    background-color: #305050;
+    /* Define a cor do texto como branco */
+    color: white;
+}
+
+/* Estilização para todos os títulos h2 */
+h2{
+    /* Define a cor dos títulos h2 como laranja */
+    color: orange;
+}
+
+/* Estilização para textos em inglês */
+.texto-inglês {
+    /* Define o estilo da fonte como itálico para textos em inglês */
+    font-style: italic;
+}
+
+/* Estilização para o nome do usuário */
+#nome-usuario {
+    /* Define o peso da fonte como negrito para o nome do usuário */
+    font-weight: bold;
+}
+
+/* Estilização para a imagem */
+img {
+    /* Centraliza a imagem horizontalmente */
+    display: block;
+    margin: 0 auto;
+    /* Adiciona um espaçamento acima e abaixo da imagem */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
