@@ -1,0 +1,98 @@
+<!-- 
+📄 Arquivo HTML - Define a estrutura e semântica da página web
+Responsável pela marcação do conteúdo e organização hierárquica dos elementos
+-->
+
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+
+<html lang="pt-br">
+<!-- Elemento raiz com especificação do idioma para acessibilidade e SEO -->
+
+<head>
+    <!-- 
+    Seção HEAD - Metadados e recursos externos
+    Contém informações não visíveis ao usuário, mas essenciais para o navegador
+    -->
+    
+    <meta charset="UTF-8">
+    <!-- Codificação de caracteres UTF-8 para suporte a acentos e caracteres especiais -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração de viewport para design responsivo em dispositivos móveis -->
+    
+    <title>Hello World - Aula de JavaScript</title>
+    <!-- Título da página exibido na aba do navegador e indexado por mecanismos de busca -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação da folha de estilos CSS externa -->
+</head>
+
+<body>
+    <!-- 
+    Seção BODY - Conteúdo visível da página
+    Todos os elementos que compõem a interface do usuário
+    -->
+    
+    <header>
+        <!-- Cabeçalho da página - elemento semântico HTML5 -->
+        
+        <h1>Hello World!</h1>
+        <!-- Título principal da página (heading de nível 1) -->
+        
+        <p>Que bom te ver por aqui, <span id="nome-usuário">Fulano</span></p>
+        <!-- 
+        Parágrafo com elemento span identificado
+        O ID permite manipulação específica via CSS e JavaScript
+        -->
+        
+        <button onclick="inserirNome()">Alterar Nome</button>
+        <!-- 
+        Botão com event handler inline
+        Executa a função JavaScript quando clicado (evento click)
+        -->
+    </header>
+    
+     <section>
+        <!-- Seção de conteúdo - agrupamento temático de informações -->
+        
+        <h2>HTML</h2>
+        <!-- Subtítulo (heading de nível 2) -->
+        
+        <p><span class="texto-inglês">HyperText Markup Language</span> (em português, Linguagem de Marcação de Hipertexto) estrutura sua página web</p>
+        <!-- 
+        Parágrafo com span estilizado por classe CSS
+        Explica conceitos fundamentais de desenvolvimento web
+        -->
+        
+        <h2>CSS</h2>
+        <!-- Subtítulo para seção CSS -->
+        
+        <p><span class="texto-inglês">Cascading Style Sheets</span> (em português, Folhas de Estilo em Cascata), cria estilos padronizados na sua página web.</p>
+        <!-- 
+        Descrição conceitual sobre CSS
+        Classe aplicada para diferenciação visual de termos técnicos
+        -->
+        
+        <img src="imagem/helloworld.png" alt="imagem do globo terrestre escrito Olá Mundo">
+        <!-- 
+        Elemento de imagem com caminho relativo
+        Atributo alt obrigatório para acessibilidade e SEO
+        -->
+    </section>
+    
+    <footer>
+        <!-- Rodapé da página - elemento semântico para informações finais -->
+        
+        <p>Uma página desenvolvida por Alura Start</p>
+        <!-- Créditos e informações de autoria -->
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- 
+    Importação de arquivo JavaScript externo
+    Posicionado antes do fechamento do body para garantir carregamento do DOM
+    -->
+</body>
+</html>
+<!-- Fechamento do documento HTML -->

@@ -1,0 +1,135 @@
+/* 
+📱 Folha de Estilos CSS - Controle visual e layout da aplicação
+Define apresentação, tipografia, cores e responsividade da interface
+*/
+
+body {
+    /* 
+    Seletor de elemento body - Estilos globais da página
+    Aplica configurações básicas para todo o conteúdo visível
+    */
+    background-color: #305050; /* Cor de fundo em hexadecimal - tom verde-azulado */
+    color: white; /* Cor do texto padrão - contraste adequado com o fundo */
+    text-align: center; /* Alinhamento horizontal centralizado */
+    font-family: Verdana; /* Fonte sans-serif para boa legibilidade */
+}
+
+h2 {
+    /* 
+    Estilização dos cabeçalhos de segundo nível
+    Hierarquia visual estabelecida através de cor e tamanho
+    */
+    color: orange; /* Cor de destaque para diferenciação */
+    font-size: 40px; /* Tamanho de fonte em pixels para impacto visual */
+}
+
+h3 {
+    /* Cabeçalhos de terceiro nível - subordinados aos h2 */
+    color: #FFD700; /* Dourado em hexadecimal */
+    font-size: 20px; /* Tamanho proporcional à hierarquia */
+    margin: 15px 0 10px 0; /* Espaçamento externo: topo, direita, baixo, esquerda */
+}
+
+p {
+    /* 
+    Parágrafos - Texto de conteúdo principal
+    Configuração para otimizar legibilidade
+    */
+    font-size: 20px; /* Tamanho adequado para leitura confortável */
+}
+
+.texto-inglês {
+    /* 
+    Classe CSS para termos técnicos em inglês
+    Diferenciação visual através de estilo tipográfico
+    */
+    font-style: italic; /* Itálico para distinção semântica */
+}
+
+#nome-usuário {
+    /* 
+    Seletor de ID - Elemento único identificado
+    Usado para manipulação específica via JavaScript
+    */
+    font-weight: bold; /* Peso da fonte para destaque */
+}
+
+button {
+    /* 
+    Estilização de todos os elementos button
+    Design consistente para elementos interativos
+    */
+    background-color: #FF6B35; /* Cor de fundo laranja-avermelhada */
+    color: white; /* Texto em branco para contraste */
+    border: none; /* Remove bordas padrão do navegador */
+    padding: 10px 20px; /* Espaçamento interno para área clicável */
+    margin: 10px; /* Espaçamento externo */
+    border-radius: 5px; /* Bordas arredondadas para design moderno */
+    font-size: 16px; /* Tamanho de fonte legível */
+    cursor: pointer; /* Indica elemento interativo */
+    font-family: Verdana; /* Consistência tipográfica com o body */
+}
+
+button:hover {
+    /* 
+    Pseudo-classe hover - Estado de interação
+    Feedback visual para melhor UX (User Experience)
+    */
+    background-color: #E55A2B; /* Tom mais escuro para feedback hover */
+}
+
+/* Seção de controles JavaScript - Atualmente não utilizada */
+#controles {
+    /* Layout para futuras implementações de controles interativos */
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.grupo-botoes {
+    /* Agrupamento visual de elementos button relacionados */
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:420px){
+    /* 
+    Media Query para Design Responsivo
+    Adaptações para dispositivos móveis (viewport ≤ 420px)
+    Melhora usabilidade em telas pequenas
+    */
+    
+    img{
+        /* Imagens responsivas - escalam com o container */
+        width: 100%;
+    }
+    
+    p{
+        /* Aumento da fonte para melhor legibilidade em mobile */
+        font-size: 24px;
+    }
+    
+    button {
+        /* Otimização de botões para touch screens */
+        padding: 15px 18px; /* Área de toque maior */
+        font-size: 16px;
+        margin: 8px 4px;
+        width: 90%; /* Largura relativa ao container */
+        max-width: 300px; /* Limite máximo para controle */
+    }
+    
+    #controles {
+        /* Adaptação de controles para mobile */
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .grupo-botoes {
+        /* Ajuste de espaçamento para telas menores */
+        padding: 10px;
+    }
+}
