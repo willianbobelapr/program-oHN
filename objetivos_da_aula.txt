@@ -1,0 +1,7 @@
+Objetivos da Aula - JavaScript
+
+• Compreender o que é e para que serve uma função em JavaScript.
+
+• Aprender como o JavaScript se comunica com o HTML.
+
+• Criar funções simples para manipular elementos da página. 
