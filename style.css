@@ -19,13 +19,13 @@ h2 {
     Estilização dos cabeçalhos de segundo nível
     Hierarquia visual estabelecida através de cor e tamanho
     */
-    color: orange; /* Cor de destaque para diferenciação */
+    color: rgb(255, 0, 0); /* Cor de destaque para diferenciação */
     font-size: 40px; /* Tamanho de fonte em pixels para impacto visual */
 }
 
 h3 {
     /* Cabeçalhos de terceiro nível - subordinados aos h2 */
-    color: #FFD700; /* Dourado em hexadecimal */
+    color: #ff0000; /* Dourado em hexadecimal */
     font-size: 20px; /* Tamanho proporcional à hierarquia */
     margin: 15px 0 10px 0; /* Espaçamento externo: topo, direita, baixo, esquerda */
 }
@@ -59,7 +59,7 @@ button {
     Estilização de todos os elementos button
     Design consistente para elementos interativos
     */
-    background-color: #FF6B35; /* Cor de fundo laranja-avermelhada */
+    background-color: #ff3535; /* Cor de fundo laranja-avermelhada */
     color: white; /* Texto em branco para contraste */
     border: none; /* Remove bordas padrão do navegador */
     padding: 10px 20px; /* Espaçamento interno para área clicável */
