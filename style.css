@@ -133,3 +133,8 @@ button:hover {
         padding: 10px;
     }
 }
+
+#lista{
+    color: #ff0000;
+    font-size: 20px;
+}

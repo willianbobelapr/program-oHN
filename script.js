@@ -6,6 +6,17 @@ Implementa funcionalidades dinâmicas e manipulação do DOM
 // Variável para controlar a cor atual (0=Red, 1=Green, 2=Blue)
 let corAtual = 0;
 
+// Array com as linguagens de programação
+let linguagens = ["JavaScript","Python","C"];
+//indice 0 = JavaScript
+//indice 1 = Python
+//indice 2 = C
+console.log(linguagens[0]) // JavaScript
+console.log(linguagens[1]) // Python
+console.log(linguagens[2]) // C
+
+
+
 // Função para inserir nome do usuário
 function inserirNome() {
     /* 
@@ -56,6 +67,9 @@ function inserirNome() {
     Red → Green → Blue → Red → Green → Blue...
     */
 }
+//lista de linguagens de programação
+const lista = document.querySelector("#lista"); //seleciona o elemento com o id "lista"
+lista.textContent = linguagens[0]; 
 
 // Executa a função automaticamente quando a página carregar
 window.addEventListener("load", inserirNome);
